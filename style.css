@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    top:0;
+    padding: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    height: 10vh;
+    background-image: linear-gradient(to bottom right, green, rgb(0, 255, 64));
+    border: 3px solid black;
+    box-shadow: 2px 3px 1px 1px;
+    margin: 0.1vh;
+    width: auto;
+
+}
+
+.navbar .links{
+    display: inline;
+    padding: 2vh;
+    text-align: center;
+    float: right;
+    border: 2px solid black;
+    background-color: rgb(53, 197, 125);
+    color: rgb(30, 207, 75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin: 2vh;
+    box-shadow: 3px 4px 1px 2px;
+   
+    }
+
+.navbar .links  :hover{
+    background-color: rgb(49, 197, 20);
+    box-shadow: 2px 3px 1px 2px;
+}
+
+.navbar .links a{
+    text-decoration: none;
+}
+
+
+.vidbg{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #2BA84A;
+    color: rgba(28, 226, 54, 0.877);
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+ .bannerhead{
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(13,51,20);
+  font-size: xx-large;
+  text-align: center;
+  margin: 1vh;
+ }
+
+ .bannertext{
+    font-family: "Playfair Display", serif;
+    color:rgba(0, 0, 0, 0.952);
+    font-size: larger;
+    text-align: center;
+    overflow: hidden;
+    
+ }
+
+
+ .socmed{
+    background: url(/images/Sprites.png);
+    background-repeat: no-repeat; 
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+#FB{
+    background: url(images/Sprites.png) no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+
+#TWT{
+    background: url(images/Sprites.png) no-repeat -66px -72px;
+	width: 66px;
+	height: 66px;
+}
+
+#IG{
+    background: url(images/Sprites.png) no-repeat -290px -221px;
+	width: 66px;
+	height: 66px;
+}
+
+.header{
+     font-family: "Playful Display", serif;
+     font-size: xx-large;
+     text-align: center;
+     color: #ffffff;
+}
+
+.text1{
+    margin-left: 1vw;
+    font-size: large;
+    color: #ffffff;
+    text-align: center;
+    font-family:"Playful Display",serif;
+  }
+
+ 
+
+  .test11{
+    margin-bottom:20vh;
+  }
+
+
+.Clean_Air{
+    background: url(images/Clean\ Air.webp);
+    display: block;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50vh;
+    background-size: contain;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vh;
+    animation: picanimate 2s;
+}
+  
+
+ 
+  .Waste_Management{
+    background: url(images/Waste\ Management.webp);
+    display: block;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50vh;
+    background-size: contain;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    animation: picanimate 2s;
+  }
+
+  @keyframes picanimate{
+    0%{transform: rotate(30deg) scale(0.0001,0.0001);}
+    100%{transform: rotate(360deg) scale(1,1);}
+}
+
+.vid1{
+    
+    margin-left: 32.5vw;
+    margin-right:32.5vw;  
+    height:40vh;
+    width:auto;
+}
+
+.vid2{
+
+        margin-left: 32.5vw;
+        margin-right:32.5vw;  
+        height:40vh;
+        width:auto;
+        margin-bottom:20vh;
+}
+
+.pic1{
+    display: none;
+    height: 80%;
+
+}
+ .title{
+    color: darkgreen;
+    background-color:(green);
+ }
+
+@media screen and (max-width:480px){
+   .vid1{
+    display:none;
+   }
+
+   .pic1{
+    display: block;
+    width: 80%;
+    margin-bottom: 20vh;
+   }
+
+   .vid2{
+    display: none;
+   }
+
+   .header
+  {  
+    text-align: center;
+  }
+
+  .title{
+    background-color: #5a9b58;
+    padding: 1vw;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .navbar{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  }
+
+    .navbar .links{
+    max-height: 0;
+    overflow: visible;
+    display: none;
+    position: static;
+    width:160px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color:#2b8628;
+    text-align: center;
+   
+    
+  }
+
+     .navbar .links a{
+        color: black;
+        padding: 12px 0;
+        display:block;
+        text-decoration: none;
+       
+   }
+     .navbar .links a:hover{
+    background-color: #2BA84A;
+   }
+
+   .navbar:hover .links{
+    display:block;
+    max-height: 1.4vh;
+   }
+    
+   .navbar:hover .title{
+    background-color: #1db329;
+   }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
